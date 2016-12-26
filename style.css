@@ -1,0 +1,196 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h1 {
+	margin: 0; /*for dumb space up top*/
+	margin-bottom: 1em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+.main-header {
+	padding: 0;
+	margin: 0;
+}
+
+.name {
+	font-size: 1.25em;
+	text-align: center;
+	vertical-align: top;
+
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav li {
+	text-align: center;
+	margin-bottom: 1em;
+	vertical-align: top;
+
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	max-width: 100%;
+}
+
+.main-footer {
+	clear: both;
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* ---- Banner Elements---- */
+
+
+.banner {
+	text-align: center;
+	padding: 50px 0;
+	margin-bottom: 2em;
+}
+
+.logo {
+	width: 190px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+.headline {
+	margin: 1em 0 .1em;
+}
+
+/* ---- Content Elements---- */
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+	/*---Navigation and Header ---*/
+
+	.name {
+		float: left;
+	}
+
+	.main-nav {
+		margin-top: 0;
+		margin-top: 1.2em;
+	}
+	.main-nav li{
+		margin-top: 0;
+		display: block;
+		float: right;
+		margin-right: 3em;
+	}
+
+	.col {
+		display: inline-block;
+		float: left;
+		max-width: 33.3%;
+		vertical-align: top;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+
+	}
+
+/*--Header--*/
+
+	.wrap {
+		min-height: calc(100vh-25px);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
